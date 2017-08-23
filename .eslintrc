@@ -17,6 +17,21 @@
       "sourceType": "module"
     },
     "rules": {
-      "import/no-extraneous-dependencies": ["error", {"devDependencies": false, "optionalDependencies": false, "peerDependencies": false}]
+      "indent": [
+        "error",
+      2,
+      {
+        "SwitchCase": 1,
+        "MemberExpression": 0
+      }
+      ],
+      "quotes": [
+        "error",
+      "single"
+      ],
+      "semi": [
+        "error",
+      "always"
+      ]
     }
 }

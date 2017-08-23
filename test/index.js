@@ -15,7 +15,7 @@ describe('propTypesHelper', () => {
       // eslint-disable-next-line no-console
       console.error = message => {
         throw new Error(message);
-      }
+      };
     });
     after(function() {
       // eslint-disable-next-line no-console
@@ -49,7 +49,7 @@ describe('propTypesHelper', () => {
       try {
         PropTypes.checkPropTypes(ret, { ...optional, test2: true }, 'optional', 'MyTest');
       } catch (err) {
-       return done(err);
+        return done(err);
       }
       done();
     });

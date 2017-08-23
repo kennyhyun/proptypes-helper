@@ -1,0 +1,22 @@
+{
+  "env": {
+    "es6": true,
+      "node": true
+  },
+    "globals": {
+      "describe": false,
+      "it": false
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "ecmaFeatures": {
+        "experimentalObjectRestSpread": true,
+        "spread": true
+      },
+      "sourceType": "module"
+    },
+    "rules": {
+      "import/no-extraneous-dependencies": ["error", {"devDependencies": false, "optionalDependencies": false, "peerDependencies": false}]
+    }
+}

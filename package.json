@@ -1,6 +1,6 @@
 {
   "name": "proptypes-helper",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "a helper to generate class names for blocks, elements, and modifiers.",
   "main": "dist/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/styleatlas/proptypes-helper.git"
+    "url": "git+https://github.com/style-atlas/proptypes-helper.git"
   },
   "author": "Kenny Kyunghyun Yeo <kenny@yeoyou.net>",
   "license": "MIT",
@@ -26,7 +26,7 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/styleatlas/proptypes-helper/issues"
+    "url": "https://github.com/style-atlas/proptypes-helper/issues"
   },
   "homepage": "https://styleatlas.co",
   "eslintConfig": {

@@ -7,7 +7,7 @@ it provides proptypes from the default values in the object.
 ## some examples
 
 ```js
-import * as helper from 'prop-types-helper';
+import * as helper from 'proptypes-helper';
 
 const types = {
   optional: {

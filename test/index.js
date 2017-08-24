@@ -61,21 +61,6 @@ describe('propTypesHelper', () => {
     // });
   });
   describe('defaultProps', () => {
-    it('should throw exceptions if no optional', done => {
-      try {
-        helper.defaultProps({});
-        return done('couldn`t catch the exception');
-      } catch(err) {
-        // suceed
-      }
-      try {
-        helper.defaultProps();
-        return done('couldn`t catch the exception');
-      } catch(err) {
-        done();
-      }
-    });
-
     it('should return an object with keys in required, and optional', () => {
       const ret = helper.defaultProps({ external, required, optional });
       const sortedKey = Object.keys(ret).sort();

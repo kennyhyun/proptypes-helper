@@ -130,12 +130,15 @@ export const propTypes = ({ external, required, optional } = {}) => {
   };
 };
 
-export const defaultProps = ({ external, optional }) => {
-  if (!optional) {
-    throw new Error('propTypesHelper needs optional with the object of default values');
+export const defaultProps = ({ external, optional }) => ({
+  ...optional,
+  ...external,
+});
+
+export const attachTypes = (component, types, options = {}) => {
+  if (!options.noDefaultProps) {
+    component.defaultProps = { ...defaultProps(types) };
   }
-  return {
-    ...optional,
-    ...external,
-  };
+  component.propTypes = { ...propTypes(types) };
+  return component;
 };

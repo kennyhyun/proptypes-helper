@@ -34,6 +34,8 @@ function StatelessButton(props) {
 }
 StatelessButton.defaultProps = { ...helpers.defaultProps(types) };
 StatelessButton.propTypes = { ...helpers.propTypes(types) };
+// or
+StatelessButton = helpers.attachTypes(StatelessButton, types);
 
 class Button extends Compoment {
   static defaultProps = { ...helpers.defaultProps(types) }

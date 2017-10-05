@@ -1,5 +1,7 @@
 # prop-types-helper
 
+[![Build Status](https://travis-ci.org/style-atlas/proptypes-helper.svg?branch=master)](https://travis-ci.org/style-atlas/proptypes-helper)
+
 Tired of writing propTypes on your React App?
 Try using propTypesHelper.
 it provides proptypes from the default values in the object.
